@@ -77,14 +77,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Miali Randriamanantena — Coordinatrice de projets médias & numériques" },
+      { title: "Miali Randriamanantena" },
       {
         name: "description",
         content:
           "Portfolio de Miali Randriamanantena, coordinatrice de projets médias et numériques basée à Paris — production audiovisuelle, web, storytelling.",
       },
       { name: "author", content: "Miali Randriamanantena" },
-      { property: "og:title", content: "Miali Randriamanantena — Portfolio" },
+      { property: "og:title", content: "Miali Randriamanantena" },
       {
         property: "og:description",
         content:
@@ -92,6 +92,12 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "Miali Randriamanantena" },
+      { name: "description", content: "A personal portfolio website showcasing Miali Randriamanantena's media and digital project coordination skills." },
+      { property: "og:description", content: "A personal portfolio website showcasing Miali Randriamanantena's media and digital project coordination skills." },
+      { name: "twitter:description", content: "A personal portfolio website showcasing Miali Randriamanantena's media and digital project coordination skills." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/cd6b792e-a4cc-48e0-8cef-f230450da86c/id-preview-45abbef9--b513fb28-1e59-4a7a-9ad4-937c5340fd57.lovable.app-1782599678077.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/cd6b792e-a4cc-48e0-8cef-f230450da86c/id-preview-45abbef9--b513fb28-1e59-4a7a-9ad4-937c5340fd57.lovable.app-1782599678077.png" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
