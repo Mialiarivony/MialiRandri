@@ -1,119 +1,30 @@
 # Portfolio — Miali Randriamanantena
 
-Site portfolio personnel single-page, bilingue (FR/EN), construit avec **TanStack Start (React 19) + Tailwind v4 + Framer Motion**.
+# Utilisation de l'intelligence artificielle
 
-## Aperçu
+Ce portfolio a été réalisé avec une utilisation raisonnée d'outils d'intelligence artificielle, conformément aux consignes du projet.
 
-- Section Hero avec portrait et accroche bilingue
-- Composant signature **FilmStrip** (pellicule cinéma défilante) placé après le Hero et après les Projets
-- Sections : À propos, Compétences, Projets, Distinctions, Expériences, Formation, Contact
-- Bouton de bascule de langue (FR ⇄ EN) dans la navbar et le footer
-- Navbar fixe (sticky) avec effet de fond au scroll
-- Animations au scroll via Framer Motion + effets hover-zoom sur les images
+La première version du projet a été générée avec **Lovable**, qui m'a permis d'obtenir une base de travail (structure générale, architecture du projet et premiers composants). J'ai volontairement choisi cet outil afin d'expérimenter une nouvelle approche de développement et de me confronter à des technologies que nous n'avions pas encore étudiées en cours, notamment **React**, **TypeScript** et **TanStack Start**.
 
-## Structure des dossiers
+L'objectif n'était pas de rendre un projet généré automatiquement, mais de partir d'un squelette fonctionnel pour apprendre à le comprendre, le modifier et le personnaliser.
 
-```
-src/
-├── assets/                  # Images (portrait, projets, distinctions…)
-├── components/
-│   ├── Navbar.tsx           # Navigation fixe + toggle de langue
-│   ├── FilmStrip.tsx        # Pellicule cinéma défilante (composant signature)
-│   └── ui/                  # Composants shadcn (non utilisés ici par défaut)
-├── lib/
-│   └── i18n.tsx             # Contexte React pour la langue (FR/EN) + helper t(fr, en)
-├── routes/
-│   ├── __root.tsx           # Layout racine, balises <head>, polices Google
-│   └── index.tsx            # Page unique avec toutes les sections
-└── styles.css               # Design system : tokens couleur, polices, animations
-```
+À partir de cette base, j'ai notamment réalisé les modifications suivantes :
 
-## Technologies utilisées
+* remplacement de toutes les images du portfolio ;
+* réécriture et personnalisation de l'ensemble des contenus ;
+* ajout de mes projets personnels et de leurs liens ;
+* adaptation de la mise en page et de plusieurs éléments visuels ;
+* personnalisation du footer et des mentions légales ;
+* déploiement du projet avec GitHub et Vercel.
 
-- **TanStack Start v1** (React 19, file-based routing)
-- **Tailwind CSS v4** (CSS-first via `@theme` dans `src/styles.css`)
-- **Framer Motion** pour les animations au scroll
-- **Google Fonts** : Fraunces (display) + DM Sans (corps)
-- **TypeScript** strict
+Tout au long du développement, j'ai utilisé l'IA comme un outil d'accompagnement afin de comprendre le fonctionnement du code, apprendre à lire une architecture React/TypeScript, résoudre des problèmes techniques (Git, GitHub, VS Code, déploiement) et être capable de modifier le projet par moi-même.
 
-## Installation locale
+Cette démarche m'a permis d'acquérir des compétences que je n'avais pas au début du projet, notamment sur l'utilisation de Git, le fonctionnement d'un projet React, la personnalisation d'une application existante et son déploiement.
 
-```bash
-bun install        # ou npm install / pnpm install
-bun run dev        # lance le serveur de dev (Vite)
-bun run build      # build de production
-```
+**Dialogue avec l'IA :**
 
-## Guide des modifications fréquentes
+* Lovable / Claude : génération de la première base du projet. https://claude.ai/share/ce22ffe5-0dd0-497f-a827-7ce132bf8e12
+* ChatGPT : accompagnement dans la compréhension du code, les modifications, l'utilisation de Git/GitHub et le déploiement du portfolio.
 
-### Remplacer une image
+Lien de partage de la conversation ChatGPT : https://chatgpt.com/share/6a41a41f-3d7c-83eb-ad40-f0fc3fa04815
 
-Toutes les images vivent dans `src/assets/` et sont importées en haut de `src/routes/index.tsx` :
-
-```ts
-import portrait from "@/assets/portrait.jpg";
-import projPaths from "@/assets/project-paths.jpg";
-// ...
-```
-
-Pour remplacer une image, **dépose simplement un nouveau fichier au même nom et au même format** (ou ajoute un nouveau fichier puis change le chemin de l'import). Ratios recommandés :
-- Portrait Hero : **4/5** (896×1152)
-- Cartes Projets : **16/9** (1280×720)
-- Cartes Distinctions : **4/3** (1024×768)
-- Photo « À propos » : **4/3** (1280×896)
-
-### Modifier un texte
-
-Tous les textes bilingues sont écrits inline via le helper `t("texte FR", "texte EN")` :
-
-```tsx
-<h1>{t("Bonjour", "Hello")}</h1>
-```
-
-Ouvre `src/routes/index.tsx`, cherche la chaîne FR, modifie les deux versions.
-
-### Ajouter un projet
-
-Dans `src/routes/index.tsx`, repère le tableau `projects` dans la fonction `Projects()` et ajoute un objet :
-
-```ts
-{
-  img: nouveauProjet,            // import depuis src/assets/
-  title: "Titre du projet",
-  year: "2026",
-  url: "https://…",             // optionnel
-  descFr: "Description en français.",
-  descEn: "English description.",
-  tags: ["Tag1", "Tag2"],
-}
-```
-
-Pense à ajouter l'import en haut du fichier : `import nouveauProjet from "@/assets/mon-image.jpg";`
-
-### Changer une couleur
-
-La palette est définie dans `src/styles.css` sous `:root` :
-
-```css
-:root {
-  --terracotta: oklch(0.55 0.16 40);   /* #C1440E */
-  --gold:       oklch(0.78 0.15 70);    /* #F5A623 */
-  --forest:     oklch(0.32 0.06 160);   /* #1B4332 */
-  --cream:      oklch(0.97 0.012 80);   /* #FAF7F2 */
-  --ink:        oklch(0.22 0.005 60);   /* #1A1A1A */
-}
-```
-
-Modifie une valeur `oklch()` et toutes les classes Tailwind correspondantes (`bg-terracotta`, `text-gold`…) sont mises à jour partout dans le site.
-
-### Modifier les mots-clés de la pellicule
-
-Ouvre `src/components/FilmStrip.tsx` et édite le tableau `KEYWORDS` en haut du fichier.
-
-### Changer la langue par défaut
-
-Dans `src/lib/i18n.tsx`, remplace `useState<Lang>("fr")` par `useState<Lang>("en")`.
-
----
-
-Made with ❤ by Miali · © 2026
