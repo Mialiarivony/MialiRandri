@@ -21,10 +21,21 @@ Tout au long du développement, j'ai utilisé l'IA comme un outil d'accompagneme
 
 Cette démarche m'a permis d'acquérir des compétences que je n'avais pas au début du projet, notamment sur l'utilisation de Git, le fonctionnement d'un projet React, la personnalisation d'une application existante et son déploiement.
 
-**Dialogue avec l'IA :**
+##Dialogue avec l'IA 
 
 * Lovable / Claude : génération de la première base du projet. https://claude.ai/share/ce22ffe5-0dd0-497f-a827-7ce132bf8e12
 * ChatGPT : accompagnement dans la compréhension du code, les modifications, l'utilisation de Git/GitHub et le déploiement du portfolio.
 
 Lien de partage de la conversation ChatGPT : https://chatgpt.com/share/6a41a41f-3d7c-83eb-ad40-f0fc3fa04815
+
+## Déploiement
+
+Le code source du projet est disponible dans ce dépôt GitHub. En revanche, l'application est déployée sur **Vercel** et non sur **GitHub Pages**.
+
+Ce choix est lié aux caractéristiques techniques du projet : la configuration utilisée n'était pas compatible avec un déploiement via GitHub Pages. Vercel étant particulièrement adapté aux applications web modernes, il a été retenu pour l'hébergement.
+
+Le portfolio est donc accessible à l'adresse suivante :
+
+https://miali-randri.vercel.app/
+
 
