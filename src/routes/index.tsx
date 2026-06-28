@@ -709,8 +709,12 @@ function Footer() {
     <footer className="border-t border-ink/10 bg-cream py-10">
       <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 px-6 text-sm text-ink/60 md:flex-row">
         <p>
-          {t("Fait avec", "Made with")} <span className="text-terracotta">❤</span>{" "}
-          {t("par Miali", "by Miali")} · © 2026
+         
+          © 2026- Miali Randri -
+          {t("Mentions légales", "Legal notice")} -
+          {t("IA", "AI")} Claude-Lovable
+
+          
         </p>
         <button
           onClick={toggle}
