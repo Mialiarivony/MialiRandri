@@ -23,7 +23,8 @@ Cette démarche m'a permis d'acquérir des compétences que je n'avais pas au d�
 
 ##Dialogue avec l'IA 
 
-* Lovable / Claude : génération de la première base du projet. https://claude.ai/share/ce22ffe5-0dd0-497f-a827-7ce132bf8e12
+* Lovable / Claude : génération de la première base du projet. https://claude.ai/share/ce22ffe5-0dd0-497f-a827-7ce132bf8e12 
+https://mialirandri-portfolio.lovable.app
 * ChatGPT : accompagnement dans la compréhension du code, les modifications, l'utilisation de Git/GitHub et le déploiement du portfolio.
 
 Lien de partage de la conversation ChatGPT : https://chatgpt.com/share/6a41a41f-3d7c-83eb-ad40-f0fc3fa04815
