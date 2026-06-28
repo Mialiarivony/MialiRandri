@@ -4,14 +4,14 @@ import { LangProvider, useLang } from "@/lib/i18n";
 import { Navbar } from "@/components/Navbar";
 import { FilmStrip } from "@/components/FilmStrip";
 
-import portrait from "@/assets/portrait.jpg";
-import about from "@/assets/about.jpg";
-import projPaths from "@/assets/project-paths.jpg";
-import projGwangju from "@/assets/project-gwangju.jpg";
+import portrait from "@/assets/portrait-Miali.png";
+import about from "@/assets/about-Miali.JPEG";
+import projPaths from "@/assets/project path to health-Miali.png";
+import projGwangju from "@/assets/project-Gwangju.png";
 import projCampus from "@/assets/project-campus.jpg";
-import awardGameJam from "@/assets/award-gamejam.jpg";
-import awardHackathon from "@/assets/award-hackathon.jpg";
-import awardGraduation from "@/assets/award-graduation.jpg";
+import awardGameJam from "@/assets/award-Gamjam-Miali.png";
+import awardHackathon from "@/assets/award-hackaton-Miali.jpg";
+import awardGraduation from "@/assets/award-graduation-Miali.png";
 import blob from "@/assets/blob.png";
 
 export const Route = createFileRoute("/")({
@@ -27,7 +27,7 @@ export const Route = createFileRoute("/")({
       {
         property: "og:description",
         content:
-          "De l'idée au rendu final — coordination de projets médias et numériques.",
+          "De l'idée au rendu final  coordination de projets médias et numériques.",
       },
     ],
   }),
@@ -90,8 +90,8 @@ function Hero() {
           </h1>
           <p className="mt-8 max-w-xl text-xl leading-relaxed text-ink/80 md:text-2xl">
             {t(
-              "Je coordonne des projets médias et numériques — de l'idée au rendu final.",
-              "I coordinate media and digital projects — from concept to delivery.",
+              "Je coordonne des projets médias et numériques de l'idée au rendu final.",
+              "I coordinate media and digital projects  from concept to delivery.",
             )}
           </p>
           <p className="mt-4 max-w-xl text-sm text-ink/60 md:text-base">
@@ -137,7 +137,7 @@ function Hero() {
           <div className="absolute -bottom-6 -left-6 rounded-2xl bg-ink px-5 py-4 text-cream shadow-xl">
             <p className="font-display text-2xl leading-none">22</p>
             <p className="mt-1 text-[10px] uppercase tracking-widest text-cream/70">
-              {t("ans · années d'envie", "years · driven")}
+              {t("ans ", "years")}
             </p>
           </div>
         </motion.div>
@@ -168,14 +168,14 @@ function About() {
           </p>
           <h2 className="font-display text-4xl font-semibold leading-tight md:text-5xl">
             {t(
-              "Piloter un projet — et y mettre les mains.",
-              "Lead a project — and roll up my sleeves.",
+              "Piloter un projet  et y mettre les mains.",
+              "Lead a project  and roll up my sleeves.",
             )}
           </h2>
           <p className="mt-6 text-lg leading-relaxed text-ink/75">
             {t(
-              "Je suis Miali. Je coordonne des projets où le numérique et les médias se croisent — qu'il s'agisse d'un site web, d'un documentaire, d'une campagne digitale ou d'un lancement produit. Ce qui me définit : je sais à la fois piloter un projet et mettre la main à la pâte. J'ai travaillé en production audiovisuelle, en communication digitale et en développement web, et cette polyvalence me permet de parler le même langage que toutes les équipes avec lesquelles je collabore.",
-              "I'm Miali. I coordinate projects where digital and media intersect — whether it's a website, a documentary, a digital campaign or a product launch. What defines me: I know how to both lead a project and get hands-on. I've worked in audiovisual production, digital communication and web development, and that versatility lets me speak the same language as every team I work with.",
+              "Je suis Miali. Je coordonne des projets où le numérique et les médias se croisent  qu'il s'agisse d'un site web, d'un documentaire, d'une campagne digitale ou d'un lancement produit. Ce qui me définit : je sais à la fois piloter un projet et mettre la main à la pâte. J'ai travaillé en production audiovisuelle, en communication digitale et en développement web, et cette polyvalence me permet de parler le même langage que toutes les équipes avec lesquelles je collabore.",
+              "I'm Miali. I coordinate projects where digital and media intersect whether it's a website, a documentary, a digital campaign or a product launch. What defines me: I know how to both lead a project and get hands-on. I've worked in audiovisual production, digital communication and web development, and that versatility lets me speak the same language as every team I work with.",
             )}
           </p>
         </motion.div>
@@ -282,18 +282,18 @@ function Projects() {
     {
       img: projPaths,
       title: "Paths to Health",
-      year: "2025",
+      year: "2026",
       url: "https://sante.mastercmw.com/",
       descFr:
-        "Documentaire interactif trilingue (FR/EN/KR) tourné en Corée du Sud, explorant les représentations de la santé à travers des récits personnels. Rôle : ingénieure son — captation terrain, perche, mixage et post-production audio.",
+        "Documentaire interactif trilingue (FR/EN/KR) tourné en Corée du Sud, explorant les représentations de la santé à travers des récits personnels. Rôle : ingénieure son, captation terrain, perche, mixage et post-production audio.",
       descEn:
-        "Trilingual interactive documentary (FR/EN/KR) shot in South Korea, exploring personal representations of health. Role: sound engineer — field recording, boom operation, audio mixing and post-production.",
+        "Trilingual interactive documentary (FR/EN/KR) shot in South Korea, exploring personal representations of health. Role: sound engineer, field recording, boom operation, audio mixing and post-production.",
       tags: ["Ingénierie son", "Documentaire", "Corée du Sud", "Master CMW"],
     },
     {
       img: projGwangju,
       title: "Gwangju 5.18",
-      year: "2025",
+      year: "2026",
       url: "https://gwangju-exposition.mastercmw.com/index.html",
       descFr:
         "Site web trilingue (FR/EN/KR) préservant une archive photographique sur le soulèvement démocratique de Gwangju (mai 1980, Corée du Sud). Chronologie interactive, galerie photo, section historique. Rôle : rédactrice web et structuration des contenus.",
@@ -301,16 +301,7 @@ function Projects() {
         "Trilingual website (FR/EN/KR) preserving a photographic archive of the Gwangju Uprising (May 1980, South Korea). Interactive timeline, photo gallery, history section. Role: web writer and content researcher.",
       tags: ["Rédaction web", "Stratégie de contenu", "Histoire", "Master CMW"],
     },
-    {
-      img: projCampus,
-      title: "Campus virtuel — Université de Fianarantsoa",
-      year: "2024",
-      descFr:
-        "Site web interactif intégrant vidéos, photos et cartographie interactive pour une visite virtuelle du campus universitaire.",
-      descEn:
-        "Interactive website with videos, photos and an interactive map for a virtual university campus tour.",
-      tags: ["Développement web", "Cartographie", "Interactif", "Madatlas"],
-    },
+   
   ];
 
   return (
@@ -325,7 +316,7 @@ function Projects() {
           </h2>
         </div>
         <p className="hidden text-right font-mono text-xs uppercase tracking-widest text-ink/50 md:block">
-          03 — {lang === "fr" ? "projets" : "projects"}
+          02 — {lang === "fr" ? "projets" : "projects"}
         </p>
       </motion.div>
 
@@ -399,9 +390,9 @@ function Awards() {
       result: t("1ère place", "1st place"),
       role: t("Responsable communication", "Communication Manager"),
       descFr:
-        "Jeu narratif éco-futuriste LOVA — valorisation culturelle et enjeux environnementaux.",
+        "Jeu narratif éco-futuriste LOVA, valorisation culturelle et enjeux environnementaux.",
       descEn:
-        "Eco-futurist narrative game LOVA — cultural celebration and environmental issues.",
+        "Eco-futurist narrative game LOVA, cultural celebration and environmental issues.",
     },
     {
       img: awardHackathon,
@@ -417,11 +408,11 @@ function Awards() {
     {
       img: awardGraduation,
       medal: "🏅",
-      title: t("Vice-Major de promotion", "Class Salutatorian"),
+      title: t("Major de promotion", "Class Salutatorian"),
       result: t("Promotion Ascenda", "Ascenda cohort"),
       role: t("Diplôme Licence", "Bachelor's degree"),
-      descFr: "Licence Communication & Multimédia — EMIT Madagascar, Promotion Ascenda.",
-      descEn: "Bachelor in Communication & Multimedia — EMIT Madagascar, Ascenda cohort.",
+      descFr: "Licence Communication & Multimédia-EMIT Madagascar, Promotion Ascenda.",
+      descEn: "Bachelor in Communication & Multimedia-EMIT Madagascar, Ascenda cohort.",
     },
   ];
   return (
@@ -432,7 +423,7 @@ function Awards() {
             {t("Distinctions", "Awards")}
           </p>
           <h2 className="font-display text-4xl font-semibold leading-tight md:text-5xl">
-            {t("Reconnaissances & podiums.", "Recognitions & podiums.")}
+            {t("Reconnaissances - podiums.", "Recognitions - podiums.")}
           </h2>
         </motion.div>
         <div className="grid gap-8 md:grid-cols-3">
@@ -491,7 +482,7 @@ function Experience() {
     },
     {
       date: t("mai 2024 · 4 mois", "May 2024 · 4 months"),
-      company: "Madatlas — State of the Map",
+      company: "Madatlas - State of the Map",
       color: "bg-gold",
       descFr:
         "Gestion des contenus web et mise en place d'un formulaire d'inscription pour un événement international de cartographie.",
@@ -625,7 +616,7 @@ function Contact() {
             </li>
             <li>
               <a
-                href="https://linkedin.com/in/mialiarivony-randri-4b8b862a9"
+                href="https://www.linkedin.com/in/miali-randri-4b8b862a9/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group flex items-center justify-between gap-4 border-b border-cream/15 py-3 transition hover:border-gold"
@@ -634,17 +625,7 @@ function Contact() {
                 <span className="text-base group-hover:text-gold">mialiarivony-randri ↗</span>
               </a>
             </li>
-            <li>
-              <a
-                href="https://instagram.com/mialiiarivony_rd"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group flex items-center justify-between gap-4 border-b border-cream/15 py-3 transition hover:border-gold"
-              >
-                <span className="font-mono uppercase tracking-widest text-cream/50">Instagram</span>
-                <span className="text-base group-hover:text-gold">@mialiiarivony_rd ↗</span>
-              </a>
-            </li>
+            
             <li className="flex items-center justify-between gap-4 border-b border-cream/15 py-3">
               <span className="font-mono uppercase tracking-widest text-cream/50">
                 {t("Localisation", "Location")}
